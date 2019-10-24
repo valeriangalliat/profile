@@ -167,8 +167,9 @@
     set $ws0 0
 
     # Output association
-    workspace $ws1 output eDP1
-    workspace $ws2 output DP1
+    workspace $ws1 output DVI-I-2-1
+    workspace $ws2 output DVI-I-3-2
+    workspace $ws3 output eDP-1-1
 
     # Switch to workspace
     bindsym $mod+1 workspace $ws1

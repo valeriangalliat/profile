@@ -2,6 +2,8 @@
 ! ~/.Xresources
 !
 
+Xcursor.size: 12
+
 ! Base16 {{{
 ! ----------
 
