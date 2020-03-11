@@ -120,7 +120,7 @@
     bindsym $mod+Shift+space floating toggle
 
     # Change focus between tiling and floating windows
-    bindsym $mod+space focus mode_toggle
+    # bindsym $mod+space focus mode_toggle
 
     # Focus parent/child container
     bindsym $mod+a focus parent
@@ -148,6 +148,11 @@
     bindsym XF86AudioPlay exec playerctl play-pause
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
+
+    # Alternate media player controls
+    bindsym $mod+space exec playerctl play-pause
+    bindsym $mod+n exec playerctl next
+    bindsym $mod+p exec playerctl previous
 
 # }}}
 
@@ -297,5 +302,6 @@
 # ===========
 
     exec i3-msg 'workspace $ws1; exec firefox'
+    exec node ~/projects/playerctl-firefox-youtube/server.js
 
 # }}}
