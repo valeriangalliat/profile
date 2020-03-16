@@ -22,12 +22,18 @@ interval=60
 
 [iface]
 color=#a1b56c
+IFACE=wlp0s20f3
+interval=60
+
+[iface]
+color=#a1b56c
+IFACE=tun0
 interval=60
 
 [wifi]
 command=$DOTFILES/i3blocks/i3blocks-contrib/$BLOCK_NAME/$BLOCK_NAME | i3blocks-recolor
 label=WIFI 
-INTERFACE=wlp2s0
+INTERFACE=wlp0s20f3
 interval=10
 
 #[bandwidth]
